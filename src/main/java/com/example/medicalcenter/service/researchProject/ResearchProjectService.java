@@ -60,7 +60,7 @@ public class ResearchProjectService {
     }
 
 
-    public ResearchProjectGetDTO getReseachProjectById(UUID id){
+    public ResearchProjectGetDTO getResearchProjectById(UUID id){
         var project = researchProjectRepository.findById(id);
         return mapper.map(project,ResearchProjectGetDTO.class);
     }
@@ -73,7 +73,6 @@ public class ResearchProjectService {
                 .map(agreement -> {
 
                     agreement.setIsActive(false);
-
 
                     return agreement;
                 })

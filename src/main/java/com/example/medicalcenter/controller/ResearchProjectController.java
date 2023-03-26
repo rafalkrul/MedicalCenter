@@ -26,8 +26,8 @@ public class ResearchProjectController {
     }
 
     @GetMapping("/researchProject/{id}")
-    public ResponseEntity<ResearchProjectGetDTO> getReseachProjectById(@PathVariable UUID id){
-        var project = researchProjectService.getReseachProjectById(id);
+    public ResponseEntity<ResearchProjectGetDTO> getResearchProjectById(@PathVariable UUID id){
+        var project = researchProjectService.getResearchProjectById(id);
         return new ResponseEntity<>(project, HttpStatus.OK);
     }
 

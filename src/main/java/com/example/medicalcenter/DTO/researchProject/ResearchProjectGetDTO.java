@@ -1,7 +1,7 @@
 package com.example.medicalcenter.DTO.researchProject;
 
 
-import com.example.medicalcenter.model.Patient;
+import com.example.medicalcenter.DTO.patient.PatientDataDTO;
 import lombok.Data;
 
 import java.time.LocalDate;
@@ -18,5 +18,5 @@ public class ResearchProjectGetDTO {
     private LocalDate startDate;
     // Data zakończenia testu
     private LocalDate endDate;
-    private List<Patient> patientList;
+    private List<PatientDataDTO> patientList;
 }

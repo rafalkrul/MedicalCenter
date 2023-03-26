@@ -1,0 +1,84 @@
+localhost:8080/api/patient
+
+{
+     "userData":{
+         "firstName": "Rafał",
+         "lastName": "Wołejko",
+         "password": "test",
+         "pesel": "79013501568",
+         "phoneNumber": "690065287",
+         "email": "rafal.wolejko@interia.pl",
+         "adress": "Wyszkowa19/21",
+         "role": "PATIENT"
+     }
+}
+
+localhost:8080/api/researchProject
+
+{
+   "title": "ResearchProject",
+   "description": "description",
+   "startDate": "2023-03-23",
+   "endDate": ""
+}
+
+localhost:8080/api/agreement
+
+{
+    
+    "patientId": "",
+    
+    "researchProjectId": "",
+    
+    "signInDate": "2023-03-25",
+
+    "isActive": "true"
+}
+
+localhost:8080/api/withdrawAgreement
+
+{
+    "id": "",
+
+    "patientId": "",
+    
+    "researchProjectId": ""
+    
+}
+
+localhost:8080/api/researchOrder
+
+
+{
+    "patientId": "",
+    "researchProjectId": "",
+    "researchName": "order1",
+    "dateOfExamination": "2023-06-05",
+    "status": "PENDING"
+}
+
+
+localhost:8080/api/addTestResults
+
+{
+    "id": "",
+
+    "testResultListDTO": [
+        {
+            "testName": "test1",
+            "result": "wynik1"
+        },
+        {
+            "testName": "test2",
+            "result": "wynik2"
+        }
+        
+    ]
+}
+
+localhost:8080/api/authenticate
+
+{
+    "email": "rafal.wolejko@interia.pl",
+    "password": "test"
+}

@@ -17,12 +17,9 @@ import java.util.UUID;
 @Entity(name = "ResearchProject")
 public class ResearchProject {
 
-//    @Id
-//    @GeneratedValue
-//    private UUID id;
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue
     private UUID id;
 
     @Column(nullable = false)
