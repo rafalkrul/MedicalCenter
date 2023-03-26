@@ -23,7 +23,7 @@
     spring.jooq.sql-dialect=org.hibernate.dialect.MySQL8Dialect
     spring.jpa.hibernate.ddl-auto=update
     ```
-4. cd MedicalCenter\docker docker compose up
+4. cd MedicalCenter\docker && docker compose up -d
 5. Otworzyć projekt z katalogu MedicalCenter w Intelij i uruchomić serwer
 
 
