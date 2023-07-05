@@ -1,7 +1,7 @@
 # MedicalCenter
 
 
-## Technologie
+## Technologies
 
 - Java 17
 - Spring Framework 2.7.4
@@ -9,11 +9,11 @@
 
 
 
-## Jak Uruchomić
-1. Zainstalować środowisko Javy oraz Dockera.
-2. Pobrać repozytorium
+## How to Run
+1. Install Java and Docker.
+2. Clone the repository:
     >https://github.com/rafalkrul/MedicalCenter.git
-3. Stworzyć plik konfiguracyjny src/main/resources/application.properties
+3. Create a configuration file at src/main/resources/application.properties with the following content:
     ```
     spring.datasource.url=jdbc:postgresql://localhost:5432/postgres
     spring.datasource.driver-class-name=org.postgresql.Driver
@@ -23,11 +23,14 @@
     spring.jooq.sql-dialect=org.hibernate.dialect.MySQL8Dialect
     spring.jpa.hibernate.ddl-auto=update
     ```
-4. cd MedicalCenter\docker && docker compose up -d
-5. Otworzyć projekt z katalogu MedicalCenter w Intelij i uruchomić serwer
+    
+4. Navigate to MedicalCenter\docker directory and run the following command:
 
+    ``` docker-compose up -d ```
 
-## Wykorzystywanie
+5. Open the project in IntelliJ from the MedicalCenter directory and run the server.
 
-    Do projektu został dołączony plik `Postman.txt` zawierający przykładowe komendy
-    wraz z DTO
+## Usage
+
+The project includes a `Postman.txt` file that contains sample commands along with DTO (Data Transfer Object) examples.
+
